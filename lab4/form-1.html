@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./table4.html">
+        <table bgcolor="bisque" align="center" cellspacing="3" border="5" width="50%">  
+            <h1 align="center">Student Registration</h1>
+
+            <tr>
+               <td><label for="name" required>First Name</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile no" required>Mobile no</label></td>
+                <td><input type="text" name="mobile no" id="mobile no"></td>
+            </tr>
+            <tr>
+            <td><label for="e-mail" required>e-mail</label></td>
+            <td><input type="text" name="e-mail" id="e-mail"></td>
+            </tr>
+            <tr>
+                <td><label for="address" required>Address</label></td>
+                <td><textarea rows="4" cols="18" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="nationality" required>Nationality</label></td>
+                <td><input type="text" name="nationality"></td>
+            </tr>
+            <tr>
+                <td><label for="date of birth" required*>DOB</label></td>
+                <td><input type="date" id="birth" name="birth" ></td>
+            </tr>
+            <tr>
+                <td><label required>gender</label></td>
+                <td><input type="radio" name="gender" id="a" for="gender">male
+                <input type="radio" name="gender" id="b" for="gender">female</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="degree" required>select degree</label>
+                </td>
+                    <td><select name="degree" id="degree">
+                        <option value= select degree>select option</option>
+                        <option value="btech">btech</option>
+                        <option value="mtech">mtech</option>
+                        <option value="phd">phd</option>
+                        <option value="msc">bsc</option>
+                        <option value="bsc">msc</option>
+                        <option value="bba">bba</option>
+                        <option value="bba">mba</option>
+                        <option value="bca">bca</option>
+                        <option value="mca">mca</option>
+                    </select></td>
+                <tr>
+                    <td><label for=CPI required>CPI</label></td>
+                    <td><input id="CPI"></td>
+                </tr>
+                <tr>
+                   <td><label for="University" required>University</label></td>
+                   <td><input type="text" id="University"></td>  
+                </tr>
+                <tr>
+                    <td><label for="year" required>passing year</label></td>
+                    <td><select name="year" id="year" >
+                        <option value="select year">select year</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>  
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="sumbit">
+                    <input type="cancel" value="cancel"></td>
+                </tr>
+
+        </table>
+    </form>
+</body>
+</html>

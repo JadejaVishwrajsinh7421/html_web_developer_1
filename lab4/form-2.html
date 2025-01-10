@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./form-1.html">
+        <table bgcolor="bisque" align="center" cellspacing="3" border="5" width="50%">
+            <h1 align="center">Covid 19 Vaccine Registration Form</h1>
+
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+
+            <tr>
+                <td><label for="lname" required>Last Name</label></td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+
+            <tr>
+                <td><label for="adharnumber">Adhar Number</label></td>
+                <td><input type="text" name="adharnumber" id="adharnumber"></td>
+            </tr>
+
+            <tr>
+                <td><label for="vaccine" >Vaccine Name</label></td>
+                <td><select name="vaccine" id="vaccine">
+                    <option value="select"> Please Select Vaccine Name</option>
+                    <option value="COVAXIN">COVAXIN</option>
+                    <option value="COVAXIN">COVISHIED</option>
+                    <option value="COVAXIN">PIFZER</option>
+                    <option value="COVAXIN">SPUTNIK-II</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="vaccine center" >Vaccine Center Name</label></td>
+                <td><select name="vaccine center" id="vaccine center">
+                    <option value="select"> Please Select Vaccine Center</option>
+                    <option value="COVAXIN">MORBI</option>
+                    <option value="COVAXIN">RAJKORT</option>
+                    <option value="COVAXIN">JAMNAGAR<option>
+                    <option value="COVAXIN">JUNAGADH</option>
+                    <option value="COVAXIN">KUTCH</option>
+                 </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="date of dose">Date Of Dose</label></td>
+                <td><input type="date" name="date of dose" id></td>
+            </tr>
+
+            <tr>
+                <td><label for="dose number" >Dose Number</label></td>
+                <td><select name="dose number" id="dose number">
+                    <option value="1">1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">PRO DOSE</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="sumbit" colspan="2"></td>
+                <td><input type="cancel" value="cancel"colspan=2></td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>
