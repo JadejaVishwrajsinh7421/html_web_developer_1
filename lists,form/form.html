@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Form Container */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Form Divs */
+        form div {
+            margin-bottom: 15px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        /* Input Fields */
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        /* Radio Buttons and Checkboxes */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Subscription Plan Section */
+        form div p {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Textarea */
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Responsive Design */
+
+        form {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="./lists.html">
+
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" placeholder="Enter name" id="Name">
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" placeholder="Enter number" id="phone">
+        </div>
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Enter Email">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <div>
+            <label for="gender">gender<label>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">other</option>
+                    </select>
+        </div>
+
+        <div>
+            <p>Subscription Plan</p>
+            <input type="radio" name="Subscription" value="basic" id="basic">
+            <label for="basic">BASIC</label>
+
+            <input type="radio" name="Subscription" value="premium" id="premium">
+            <label for="premium">PREMIUM</label>
+
+            <input type="radio" name="Subscription" value="vip" id="vip">
+            <label for="vip">VIP</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Sumbit</button>
+        </div>
+    </form>
+</body>
+
+</html>
